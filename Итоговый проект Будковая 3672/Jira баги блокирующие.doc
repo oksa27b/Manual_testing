@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jira</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://oksanka27.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-25]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-25">Не допускается ввод 3 символов поле ввода &quot;CVC&quot;</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Highest
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10081-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Блокирующий                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    cvc.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Название:</b></p>
+
+<p>Не допускается ввод 3 символов поле ввода "CVC" </p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a> </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Поставить курсор мыши в поле ввода "CVC" </p>
+
+<p>2.Открыть Devtools</p>
+
+<p>3.Проверить отображение максимальный ввод в поле только 3 символа</p>
+
+<p>4.В поле ввести 4 символа </p>
+
+<p><b>Фактический результат:</b> </p>
+
+<p>Максимально можно ввести в поле "CVC"  только 2 символа, принскрин ниже</p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10084/10084_cvc.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Допускается только ввод 3 символов поле ввода "CVC" </p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-26]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-26">Не отображаются значения от 001 до 999 в поле ввода  “CVC”</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Highest
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10082-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Блокирующий                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    нет ограничений на ввод.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Не отображаются значения от 001 до 999 в поле ввода “CVC”</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a> </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Поставить курсор мыши в поле ввода “CVC”</p>
+
+<p>2.Ввести значения от 001 до 999 в поле ввода  “CVC”</p>
+
+<p>3.Ввести не валидное значения в поле ввода  “CVC”</p>
+
+<p><b>Фактический результат:</b> </p>
+
+<p>Не отображаются значения в поле ввода от 001 до 999 в поле ввода  “CVC”, в поле можно ввести цифры, буквы, символы, максимально можно ввести 2 символа в поле, что не соответствует документации, принскрин ниже</p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10085/10085_%D0%BD%D0%B5%D1%82+%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B9+%D0%BD%D0%B0+%D0%B2%D0%B2%D0%BE%D0%B4.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Отображаются допустимые значения ввода - от 001 до 999 в поле ввода “CVC”</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />Полученный Wed Mar 22 12:10:29 UTC 2023 Оксана Будковая используя JIRA 1001.0.0-SNAPSHOT#100219-sha1:eb3f1fe6fc9588c9970f69b661232bd8cff92e79.
+
+</body>
+</html>

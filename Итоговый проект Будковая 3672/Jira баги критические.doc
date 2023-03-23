@@ -1,0 +1,2387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jira</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://oksanka27.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-5]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-5">Крестик отсутствует в поле ввода имени в модальном окне</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10061-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Критический                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    крестик отсутствует, отображается шляпа.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Название:</b></p>
+
+<p>Крестик отсутствует в поле ввода имени в модальном окне</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a>   </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Проверить отображение крестика в поле ввода имени пользователя в модальном окне</p>
+
+<p><b>Фактический результат:</b></p>
+
+<p>Крестик отсутствует в поле ввода имени пользователя в модальном окне, вместо крестика отображается шляпа, принскрин во вложении</p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10064/10064_%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%BA+%D0%BE%D1%82%D1%81%D1%83%D1%82%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%2C+%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B0%D0%B5%D1%82%D1%81%D1%8F+%D1%88%D0%BB%D1%8F%D0%BF%D0%B0.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Крестик отображается в поле ввода имени пользователя в модальном окне</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-6]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-6">Зеленая галочка отсутствует при заполненном поле имени пользователя</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10062-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Критический                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    отображение галочки отсутствует, отображается ракета.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Название:</b></p>
+
+<p>Зеленая галочка отсутствует при заполненном поле имени пользователя</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a>   </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Заполнить поле ввода имени пользователя</p>
+
+<p>2.Проверить отображение зеленой галочки</p>
+
+<p><b>Фактический результат:</b></p>
+
+<p>Зеленая галочка отсутствует при заполненном поле имени пользователя</p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10065/10065_%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B8+%D0%BE%D1%82%D1%81%D1%83%D1%82%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%2C+%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B0%D0%B5%D1%82%D1%81%D1%8F+%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Зеленая галочка отображается при заполненном поле имени пользователя</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-9]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-9">Принимаются не только буквы, тире и пробелы в поле ввода имени пользователя, что не соответствует документации</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10065-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Критический                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    нет ограничений на вводимые символы в поле имя.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Название:</b></p>
+
+<p>Принимаются не только буквы, тире и пробелы в поле ввода имени пользователя, что не соответствует документации</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a>   </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Поставить курсор мыши в поле ввода имени пользователя в модальном окне</p>
+
+<p>2.Ввести разные символы в поле </p>
+
+<p>3.Проверить отображение разных символов в поле </p>
+
+<p><b>Фактический результат:</b></p>
+
+<p>Нет ограничений вводимых символов, принимаются не только буквы, тире и пробелы в поле ввода имени пользователя, что не соответствует документации</p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10068/10068_%D0%BD%D0%B5%D1%82+%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B9+%D0%BD%D0%B0+%D0%B2%D0%B2%D0%BE%D0%B4%D0%B8%D0%BC%D1%8B%D0%B5+%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%B8%D0%BC%D1%8F.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Принимаются только буквы, тире и пробелы в поле ввода имени пользователя</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-10]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-10">Допустим ввод текста не только латиницей в поле ввода имени пользователя, что не соответствует документации</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10066-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Критический                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    нет ограничений на вводимые символы в поле имя.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Название:</b></p>
+
+<p>Допустим ввод текста не только латиницей в поле ввода имени пользователя, что не соответствует документации</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a>   </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Поставить курсор мыши в поле ввода имени пользователя в модальном окне</p>
+
+<p>2.Ввести текст на латинице  в поле</p>
+
+<p>3.Ввести текст на кириллице в поле</p>
+
+<p>4.Проверить отображение текста в поле</p>
+
+<p><b>Фактический результат:</b></p>
+
+<p>Допустим ввод текста не только латиницей в поле ввода имени пользователя, что не соответствует документации</p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10069/10069_%D0%BD%D0%B5%D1%82+%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B9+%D0%BD%D0%B0+%D0%B2%D0%B2%D0%BE%D0%B4%D0%B8%D0%BC%D1%8B%D0%B5+%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%B8%D0%BC%D1%8F.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Допустим ввод текста только на латинице в поле ввода имени пользователя</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-11]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-11">Иконка VISA не отображается при вводе первой цифры 4 в поле ввода номера карты</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10067-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Критический                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    ввод 4 в поле карты.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Название:</b></p>
+
+<p>Иконка VISA не отображается при вводе первой цифры 4 в поле ввода номера карты</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a>   </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Поставить курсор в поле ввода номера карты</p>
+
+<p>2.Ввести цифру 4</p>
+
+<p>3.Проверить отображение иконки VISA при вводе первой цифры 4 </p>
+
+<p><b>Фактический результат:</b></p>
+
+<p>Иконка VISA не отображается при вводе первой цифры 4 в поле ввода номера карты</p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10070/10070_%D0%B2%D0%B2%D0%BE%D0%B4+4+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Иконка VISA отображается при вводе первой цифры 4 в поле ввода номера карты</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-12]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-12">Иконка MASTERCARD не отображается при вводе первой цифры 5 в поле ввода номера карты</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10068-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Критический                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    ввод 5 в поле карты.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Название:</b></p>
+
+<p>Иконка MASTERCARD не отображается при вводе первой цифры 5 в поле ввода номера карты</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a>   </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Поставить курсор в поле ввода номера карты</p>
+
+<p>2.Ввести цифру 5</p>
+
+<p>3.Проверить отображение иконки MASTERCARD при вводе первой цифры 5 </p>
+
+<p><b>Фактический результат:</b></p>
+
+<p>Иконка MASTERCARD не отображается при вводе первой цифры 5 в поле ввода номера карты</p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10071/10071_%D0%B2%D0%B2%D0%BE%D0%B4+5+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Иконка MASTERCARD отображается при вводе первой цифры 5 в поле ввода номера карты</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-13]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-13">Иконка DINERS_CLUB не отображается при вводе первой цифры 69 в поле ввода номера карты</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10069-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Критический                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    ввод 69 в поле карты.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Название:</b></p>
+
+<p>Иконка DINERS_CLUB не отображается при вводе первой цифры 69 в поле ввода номера карты</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a>   </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Поставить курсор в поле ввода номера карты</p>
+
+<p>2.Ввести цифру 69</p>
+
+<p>3.Проверить отображение иконки DINERS_CLUB при вводе первой цифры 69 </p>
+
+<p><b>Фактический результат:</b></p>
+
+<p>Иконка DINERS_CLUB не отображается при вводе первой цифры 69 в поле ввода номера карты</p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10072/10072_%D0%B2%D0%B2%D0%BE%D0%B4+69+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Иконка DINERS_CLUB отображается при вводе первой цифры 69 в поле ввода номера карты</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-14]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-14">Иконка JCB не отображается при вводе первой цифры 3 в поле ввода номера карты</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10070-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Критический                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    ввод 3 в поле карты.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Название:</b></p>
+
+<p>Иконка JCB не отображается при вводе первой цифры 3 в поле ввода номера карты</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a>   </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Поставить курсор в поле ввода номера карты</p>
+
+<p>2.Ввести цифру 3</p>
+
+<p>3.Проверить отображение иконки JCB при вводе первой цифры 3 </p>
+
+<p><b>Фактический результат:</b></p>
+
+<p>Иконка JCB не отображается при вводе первой цифры 3 в поле ввода номера карты</p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10073/10073_%D0%B2%D0%B2%D0%BE%D0%B4+3+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Иконка JCB отображается при вводе первой цифры 3 в поле ввода номера карты</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-15]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-15">Иконка UNIONPAY не отображается при вводе первой цифры 62 в поле ввода номера карты</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10071-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Критический                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    ввод 62 в поле карты.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Название:</b></p>
+
+<p>Иконка UNIONPAY не отображается при вводе первой цифры 62 в поле ввода номера карты</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a>   </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Поставить курсор в поле ввода номера карты</p>
+
+<p>2.Ввести цифру 62</p>
+
+<p>3.Проверить отображение иконки UNIONPAY при вводе первой цифры 62 </p>
+
+<p><b>Фактический результат:</b></p>
+
+<p>Иконка UNIONPAY не отображается при вводе первой цифры 62 в поле ввода номера карты. Отображается иконка MASTERCARD </p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10074/10074_%D0%B2%D0%B2%D0%BE%D0%B4+62+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Иконка UNIONPAY отображается при вводе первой цифры 62 в поле ввода номера карты</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-16]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-16">Иконка MAESTRO не отображается при вводе первой цифры 55 в поле ввода номера карты</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10072-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Критический                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    ввод 55 в поле карты.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Название:</b></p>
+
+<p>Иконка MAESTRO не отображается при вводе первой цифры 55 в поле ввода номера карты</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a>   </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Поставить курсор в поле ввода номера карты</p>
+
+<p>2.Ввести цифру 55</p>
+
+<p>3.Проверить отображение иконки MAESTRO при вводе первой цифры 55 </p>
+
+<p><b>Фактический результат:</b></p>
+
+<p>Иконка MAESTRO не отображается при вводе первой цифры 55 в поле ввода номера карты. </p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10075/10075_%D0%B2%D0%B2%D0%BE%D0%B4+55+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Иконка MAESTRO отображается при вводе первой цифры 55 в поле ввода номера карты</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [PRJ-21]&nbsp;<a href="https://oksanka27.atlassian.net/browse/PRJ-21">Не отображается 0 в поле перед вводом цифры, если месяц до 10, в поле ввода &quot;Срок годности&quot;</a>
+            <span class="subText">
+               Создано: 21/мар/23                   &nbsp;Обновлено: 22/мар/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Статус:</b></td>
+        <td width="80%">К выполнению</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Проект:</b></td>
+        <td width="80%"><a href="https://oksanka27.atlassian.net/secure/BrowseProject.jspa?id=10006"> Project_Баг-репорты_Тестирование модального окна формы оплаты</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Компоненты:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии Affects:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Версии исправления:</b></td>
+            <td>
+                            Нет
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Тип:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Баг
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Приоритет:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Автор:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63ad544df3e7004f77fd5ae7"
+                id="word_reporter_63ad544df3e7004f77fd5ae7"
+                href="https://oksanka27.atlassian.net/secure/ViewProfile.jspa?accountId=63ad544df3e7004f77fd5ae7">
+                    Оксана Будковая
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Исполнитель:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Не назначено
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Решение:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Нет решения
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Голоса:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Метки:</b>
+        </td>
+        <td id="labels-10077-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Критический                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Оценка остатка:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Затраченное время:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Исходная оценка:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Не определено
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Среда:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0</p>
+
+<p>Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Вложения:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://oksanka27.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="JPEG файл">
+                    нет ограничений на ввод.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Описание</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Не отображается 0 в поле перед цифрой, если месяц до 10, в поле ввода "Срок годности"</p>
+
+<p><b>Предусловие:</b></p>
+
+<p>1.Открыть сайт <a href="https://test-stand.gb.ru/seminar_stands/payform/index.html" class="external-link" rel="nofollow noreferrer">https://test-stand.gb.ru/seminar_stands/payform/index.html</a> </p>
+
+<p><b>Шаги воспроизведения:</b></p>
+
+<p>1.Поставить курсор мыши в поле ввода "Срок годности" (месяц)</p>
+
+<p>2.Проверить отображение 0 перед цифрой, если месяц до 10</p>
+
+<p><b>Фактический результат:</b></p>
+
+<p>Не отображается 0 в поле перед цифрой, если месяц до 10, в поле ввода "Срок годности", в поле можно ввести цифры, буквы, символы, что не соответствует документации принскрин ниже</p>
+
+<p><span class="image-wrap" style=""><img src="/secure/attachment/10080/10080_%D0%BD%D0%B5%D1%82+%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B9+%D0%BD%D0%B0+%D0%B2%D0%B2%D0%BE%D0%B4.jpg" height="1080" width="1920" style="border: 0px solid black" /></span></p>
+
+<p><b>Ожидаемый результат:</b></p>
+
+<p>Отображается 0 перед цифрой, если месяц до 10 в поле ввода "Срок годности" (месяц)</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+<hr class='fullcontent'><br /><br style='page-break-before:always;'/><br />Полученный Wed Mar 22 11:24:04 UTC 2023 Оксана Будковая используя JIRA 1001.0.0-SNAPSHOT#100219-sha1:eb3f1fe6fc9588c9970f69b661232bd8cff92e79.
+
+</body>
+</html>

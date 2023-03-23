@@ -1,0 +1,1797 @@
+<html
+        xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Jira</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\,";
+    mso-displayed-thousand-separator:" ";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#205081" height="30">
+        <td colspan="70">
+            <img src="https://oksanka27.atlassian.net/images/icon-jira-software-logo.png" width="57" height="30" border="0" alt="Jira">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="70">
+            <a href="https://oksanka27.atlassian.net/issues/?jql=project+%3D+%22PRJ%22+AND+labels+%3D+%22%D0%9A%D1%80%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%22+ORDER+BY+key+ASC%2C+created+DESC">Jira</a>
+        </td>
+    </tr>
+    <tr>
+                <td colspan="70">
+            Отображение <strong>11</strong> задач в <strong>22/мар/23 2:24 PM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                                        <table id="issuetable" class="aui " border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-project" data-id="project">
+                                                        Проект
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                                                        Ключ
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                                                        Pезюме
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                                                        Тип задачи
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                                                        Статус
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                                                        Приоритет
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolution" data-id="resolution">
+                                                        Решение
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                                                        Исполнитель
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                                                        Автор
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-creator" data-id="creator">
+                                                        Создатель
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                                                        Создано
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-lastViewed" data-id="lastViewed">
+                                                        Последний просмотр
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-updated" data-id="updated">
+                                                        Обновлено
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolutiondate" data-id="resolutiondate">
+                                                        Решено
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-versions" data-id="versions">
+                                                        Версии Affects
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-fixVersions" data-id="fixVersions">
+                                                        Версии исправления
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-components" data-id="components">
+                                                        Компоненты
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-duedate" data-id="duedate">
+                                                        Срок исполнения
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-votes" data-id="votes">
+                                                        Голоса
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-watches" data-id="watches">
+                                                        Наблюдатели
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-thumbnail" data-id="thumbnail">
+                                                        Изображения
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timeoriginalestimate" data-id="timeoriginalestimate">
+                                                        Исходная оценка
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timeestimate" data-id="timeestimate">
+                                                        Оценка остатка
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timespent" data-id="timespent">
+                                                        Затраченное время
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-workratio" data-id="workratio">
+                                                        КПД (полезная работа/затраченная работа)
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-subtasks" data-id="subtasks">
+                                                        Подзадачи
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuelinks" data-id="issuelinks">
+                                                        Связанные задачи
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-environment" data-id="environment">
+                                                        Среда
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-description" data-id="description">
+                                                        Описание
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-security" data-id="security">
+                                                        Уровень безопасности
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-progress" data-id="progress">
+                                                        Прогресс
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregateprogress" data-id="aggregateprogress">
+                                                        Суммарный прогресс
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimespent" data-id="aggregatetimespent">
+                                                        Суммарное затраченое время
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimeestimate" data-id="aggregatetimeestimate">
+                                                        Суммарная оценка остатка
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimeoriginalestimate" data-id="aggregatetimeoriginalestimate">
+                                                        Суммарная первоначальная оценка
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-labels" data-id="labels">
+                                                        Метки
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-statuscategorychangedate" data-id="statuscategorychangedate">
+                                                        Дата изменения категории статуса
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-statusCategory" data-id="statusCategory">
+                                                        Категория статуса
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-parent" data-id="parent">
+                                                        Родитель
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10009" data-id="customfield_10009">
+                                                        Actual end
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10008" data-id="customfield_10008">
+                                                        Actual start
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10003" data-id="customfield_10003">
+                                                        Approvers
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10007" data-id="customfield_10007">
+                                                        Change reason
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10006" data-id="customfield_10006">
+                                                        Change risk
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10005" data-id="customfield_10005">
+                                                        Change type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10026" data-id="customfield_10026">
+                                                        Compass
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10013" data-id="customfield_10013">
+                                                        Epic Color
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10014" data-id="customfield_10014">
+                                                        Epic Link
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10011" data-id="customfield_10011">
+                                                        Epic Name
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10012" data-id="customfield_10012">
+                                                        Epic Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10021" data-id="customfield_10021">
+                                                        Flagged
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10004" data-id="customfield_10004">
+                                                        Impact
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10017" data-id="customfield_10017">
+                                                        Issue color
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10027" data-id="customfield_10027">
+                                                        Заблокированные формы
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10028" data-id="customfield_10028">
+                                                        Открытые формы
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10002" data-id="customfield_10002">
+                                                        Organizations
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10018" data-id="customfield_10018">
+                                                        Parent Link
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10019" data-id="customfield_10019">
+                                                        Rank
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10010" data-id="customfield_10010">
+                                                        Request Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10020" data-id="customfield_10020">
+                                                        Sprint
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10015" data-id="customfield_10015">
+                                                        Start date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10033" data-id="customfield_10033">
+                                                        Story Points
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10016" data-id="customfield_10016">
+                                                        Story point estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10029" data-id="customfield_10029">
+                                                        Отправленные формы
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10023" data-id="customfield_10023">
+                                                        Target end
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10022" data-id="customfield_10022">
+                                                        Target start
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10001" data-id="customfield_10001">
+                                                        Team
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10030" data-id="customfield_10030">
+                                                        Совокупные формы
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10024" data-id="customfield_10024">
+                                                        [CHART] Date of First Response
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10000" data-id="customfield_10000">
+                                                        development
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow10061" rel="10061" data-issuekey="PRJ-5" class="issuerow">
+                                            <td class="project">     Project_Баг-репорты_Тестирование модального окна формы оплаты
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="PRJ-5" href="https://oksanka27.atlassian.net/browse/PRJ-5">PRJ-5</a>
+</td>
+                                            <td class="summary"><p>
+                Крестик отсутствует в поле ввода имени в модальном окне
+    </p>
+</td>
+                                            <td class="issuetype">    Баг
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;К выполнению&lt;/span&gt;">К выполнению</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Нет решения</em>
+</td>
+                                            <td class="assignee">    <em>Не назначено</em>
+</td>
+                                            <td class="reporter">            Оксана Будковая
+    </td>
+                                            <td class="creator">            Оксана Будковая
+    </td>
+                                            <td class="created"> 21/мар/23 9:56 AM </td>
+                                            <td class="lastViewed"> 22/мар/23 2:08 PM </td>
+                                            <td class="updated"> 22/мар/23 2:08 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://oksanka27.atlassian.net/secure/attachment/10064/%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%BA+%D0%BE%D1%82%D1%81%D1%83%D1%82%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%2C+%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B0%D0%B5%D1%82%D1%81%D1%8F+%D1%88%D0%BB%D1%8F%D0%BF%D0%B0.jpg">
+            крестик отсутствует, отображается шляпа.jpg
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment">      Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0<br/>
+<br/>
+Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)
+  </td>
+                                            <td class="description">      *Название:*<br/>
+<br/>
+Крестик отсутствует в поле ввода имени в модальном окне<br/>
+<br/>
+*Предусловие:*<br/>
+<br/>
+1.Открыть сайт [https://test-stand.gb.ru/seminar_stands/payform/index.html|https://test-stand.gb.ru/seminar_stands/payform/index.html]   <br/>
+<br/>
+*Шаги воспроизведения:*<br/>
+<br/>
+1.Проверить отображение крестика в поле ввода имени пользователя в модальном окне<br/>
+<br/>
+*Фактический результат:*<br/>
+<br/>
+Крестик отсутствует в поле ввода имени пользователя в модальном окне, вместо крестика отображается шляпа, принскрин во вложении<br/>
+<br/>
+!крестик отсутствует, отображается шляпа.jpg|width=1920,height=1080!<br/>
+<br/>
+*Ожидаемый результат:*<br/>
+<br/>
+Крестик отображается в поле ввода имени пользователя в модальном окне
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Критический</td>
+                                            <td class="statuscategorychangedate"> 21/мар/23 9:56 AM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">К выполнению</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i000dj:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10062" rel="10062" data-issuekey="PRJ-6" class="issuerow">
+                                            <td class="project">     Project_Баг-репорты_Тестирование модального окна формы оплаты
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="PRJ-6" href="https://oksanka27.atlassian.net/browse/PRJ-6">PRJ-6</a>
+</td>
+                                            <td class="summary"><p>
+                Зеленая галочка отсутствует при заполненном поле имени пользователя
+    </p>
+</td>
+                                            <td class="issuetype">    Баг
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;К выполнению&lt;/span&gt;">К выполнению</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Нет решения</em>
+</td>
+                                            <td class="assignee">    <em>Не назначено</em>
+</td>
+                                            <td class="reporter">            Оксана Будковая
+    </td>
+                                            <td class="creator">            Оксана Будковая
+    </td>
+                                            <td class="created"> 21/мар/23 10:03 AM </td>
+                                            <td class="lastViewed"> 22/мар/23 2:09 PM </td>
+                                            <td class="updated"> 22/мар/23 2:09 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://oksanka27.atlassian.net/secure/attachment/10065/%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B8+%D0%BE%D1%82%D1%81%D1%83%D1%82%D1%81%D1%82%D0%B2%D1%83%D0%B5%D1%82%2C+%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B0%D0%B5%D1%82%D1%81%D1%8F+%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.jpg">
+            отображение галочки отсутствует, отображается ракета.jpg
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment">      Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0<br/>
+<br/>
+Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)
+  </td>
+                                            <td class="description">      *Название:*<br/>
+<br/>
+Зеленая галочка отсутствует при заполненном поле имени пользователя<br/>
+<br/>
+*Предусловие:*<br/>
+<br/>
+1.Открыть сайт [https://test-stand.gb.ru/seminar_stands/payform/index.html|https://test-stand.gb.ru/seminar_stands/payform/index.html]   <br/>
+<br/>
+*Шаги воспроизведения:*<br/>
+<br/>
+1.Заполнить поле ввода имени пользователя<br/>
+<br/>
+2.Проверить отображение зеленой галочки<br/>
+<br/>
+*Фактический результат:*<br/>
+<br/>
+Зеленая галочка отсутствует при заполненном поле имени пользователя<br/>
+<br/>
+!отображение галочки отсутствует, отображается ракета.jpg|width=1920,height=1080!<br/>
+<br/>
+<br/>
+<br/>
+*Ожидаемый результат:*<br/>
+<br/>
+Зеленая галочка отображается при заполненном поле имени пользователя
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Критический</td>
+                                            <td class="statuscategorychangedate"> 21/мар/23 10:04 AM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">К выполнению</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i000dr:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10065" rel="10065" data-issuekey="PRJ-9" class="issuerow">
+                                            <td class="project">     Project_Баг-репорты_Тестирование модального окна формы оплаты
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="PRJ-9" href="https://oksanka27.atlassian.net/browse/PRJ-9">PRJ-9</a>
+</td>
+                                            <td class="summary"><p>
+                Принимаются не только буквы, тире и пробелы в поле ввода имени пользователя, что не соответствует документации
+    </p>
+</td>
+                                            <td class="issuetype">    Баг
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;К выполнению&lt;/span&gt;">К выполнению</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Нет решения</em>
+</td>
+                                            <td class="assignee">    <em>Не назначено</em>
+</td>
+                                            <td class="reporter">            Оксана Будковая
+    </td>
+                                            <td class="creator">            Оксана Будковая
+    </td>
+                                            <td class="created"> 21/мар/23 11:01 AM </td>
+                                            <td class="lastViewed"> 22/мар/23 2:10 PM </td>
+                                            <td class="updated"> 22/мар/23 2:10 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://oksanka27.atlassian.net/secure/attachment/10068/%D0%BD%D0%B5%D1%82+%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B9+%D0%BD%D0%B0+%D0%B2%D0%B2%D0%BE%D0%B4%D0%B8%D0%BC%D1%8B%D0%B5+%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%B8%D0%BC%D1%8F.jpg">
+            нет ограничений на вводимые символы в поле имя.jpg
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment">      Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0<br/>
+<br/>
+Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)
+  </td>
+                                            <td class="description">      *Название:*<br/>
+<br/>
+Принимаются не только буквы, тире и пробелы в поле ввода имени пользователя, что не соответствует документации<br/>
+<br/>
+*Предусловие:*<br/>
+<br/>
+1.Открыть сайт [https://test-stand.gb.ru/seminar_stands/payform/index.html|https://test-stand.gb.ru/seminar_stands/payform/index.html]   <br/>
+<br/>
+*Шаги воспроизведения:*<br/>
+<br/>
+1.Поставить курсор мыши в поле ввода имени пользователя в модальном окне<br/>
+<br/>
+2.Ввести разные символы в поле <br/>
+<br/>
+3.Проверить отображение разных символов в поле <br/>
+<br/>
+*Фактический результат:*<br/>
+<br/>
+Нет ограничений вводимых символов, принимаются не только буквы, тире и пробелы в поле ввода имени пользователя, что не соответствует документации<br/>
+<br/>
+!нет ограничений на вводимые символы в поле имя.jpg|width=1920,height=1080!<br/>
+<br/>
+*Ожидаемый результат:*<br/>
+<br/>
+Принимаются только буквы, тире и пробелы в поле ввода имени пользователя
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Критический</td>
+                                            <td class="statuscategorychangedate"> 21/мар/23 11:01 AM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">К выполнению</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i000ef:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10066" rel="10066" data-issuekey="PRJ-10" class="issuerow">
+                                            <td class="project">     Project_Баг-репорты_Тестирование модального окна формы оплаты
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="PRJ-10" href="https://oksanka27.atlassian.net/browse/PRJ-10">PRJ-10</a>
+</td>
+                                            <td class="summary"><p>
+                Допустим ввод текста не только латиницей в поле ввода имени пользователя, что не соответствует документации
+    </p>
+</td>
+                                            <td class="issuetype">    Баг
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;К выполнению&lt;/span&gt;">К выполнению</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Нет решения</em>
+</td>
+                                            <td class="assignee">    <em>Не назначено</em>
+</td>
+                                            <td class="reporter">            Оксана Будковая
+    </td>
+                                            <td class="creator">            Оксана Будковая
+    </td>
+                                            <td class="created"> 21/мар/23 2:34 PM </td>
+                                            <td class="lastViewed"> 22/мар/23 2:10 PM </td>
+                                            <td class="updated"> 22/мар/23 2:10 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://oksanka27.atlassian.net/secure/attachment/10069/%D0%BD%D0%B5%D1%82+%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B9+%D0%BD%D0%B0+%D0%B2%D0%B2%D0%BE%D0%B4%D0%B8%D0%BC%D1%8B%D0%B5+%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%B8%D0%BC%D1%8F.jpg">
+            нет ограничений на вводимые символы в поле имя.jpg
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment">      Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0<br/>
+<br/>
+Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)
+  </td>
+                                            <td class="description">      *Название:*<br/>
+<br/>
+Допустим ввод текста не только латиницей в поле ввода имени пользователя, что не соответствует документации<br/>
+<br/>
+*Предусловие:*<br/>
+<br/>
+1.Открыть сайт [https://test-stand.gb.ru/seminar_stands/payform/index.html|https://test-stand.gb.ru/seminar_stands/payform/index.html]   <br/>
+<br/>
+*Шаги воспроизведения:*<br/>
+<br/>
+1.Поставить курсор мыши в поле ввода имени пользователя в модальном окне<br/>
+<br/>
+2.Ввести текст на латинице  в поле<br/>
+<br/>
+3.Ввести текст на кириллице в поле<br/>
+<br/>
+4.Проверить отображение текста в поле<br/>
+<br/>
+*Фактический результат:*<br/>
+<br/>
+Допустим ввод текста не только латиницей в поле ввода имени пользователя, что не соответствует документации<br/>
+<br/>
+!нет ограничений на вводимые символы в поле имя.jpg|width=1920,height=1080!<br/>
+<br/>
+*Ожидаемый результат:*<br/>
+<br/>
+Допустим ввод текста только на латинице в поле ввода имени пользователя
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Критический</td>
+                                            <td class="statuscategorychangedate"> 21/мар/23 2:34 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">К выполнению</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i000en:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10067" rel="10067" data-issuekey="PRJ-11" class="issuerow">
+                                            <td class="project">     Project_Баг-репорты_Тестирование модального окна формы оплаты
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="PRJ-11" href="https://oksanka27.atlassian.net/browse/PRJ-11">PRJ-11</a>
+</td>
+                                            <td class="summary"><p>
+                Иконка VISA не отображается при вводе первой цифры 4 в поле ввода номера карты
+    </p>
+</td>
+                                            <td class="issuetype">    Баг
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;К выполнению&lt;/span&gt;">К выполнению</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Нет решения</em>
+</td>
+                                            <td class="assignee">    <em>Не назначено</em>
+</td>
+                                            <td class="reporter">            Оксана Будковая
+    </td>
+                                            <td class="creator">            Оксана Будковая
+    </td>
+                                            <td class="created"> 21/мар/23 4:11 PM </td>
+                                            <td class="lastViewed"> 22/мар/23 2:13 PM </td>
+                                            <td class="updated"> 22/мар/23 2:13 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://oksanka27.atlassian.net/secure/attachment/10070/%D0%B2%D0%B2%D0%BE%D0%B4+4+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg">
+            ввод 4 в поле карты.jpg
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment">      Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0<br/>
+<br/>
+Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)
+  </td>
+                                            <td class="description">      *Название:*<br/>
+<br/>
+Иконка VISA не отображается при вводе первой цифры 4 в поле ввода номера карты<br/>
+<br/>
+*Предусловие:*<br/>
+<br/>
+1.Открыть сайт [https://test-stand.gb.ru/seminar_stands/payform/index.html|https://test-stand.gb.ru/seminar_stands/payform/index.html]   <br/>
+<br/>
+*Шаги воспроизведения:*<br/>
+<br/>
+1.Поставить курсор в поле ввода номера карты<br/>
+<br/>
+2.Ввести цифру 4<br/>
+<br/>
+3.Проверить отображение иконки VISA при вводе первой цифры 4 <br/>
+<br/>
+*Фактический результат:*<br/>
+<br/>
+Иконка VISA не отображается при вводе первой цифры 4 в поле ввода номера карты<br/>
+<br/>
+!ввод 4 в поле карты.jpg|width=1920,height=1080!<br/>
+<br/>
+<br/>
+<br/>
+*Ожидаемый результат:*<br/>
+<br/>
+Иконка VISA отображается при вводе первой цифры 4 в поле ввода номера карты
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Критический</td>
+                                            <td class="statuscategorychangedate"> 21/мар/23 4:11 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">К выполнению</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i000ev:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10068" rel="10068" data-issuekey="PRJ-12" class="issuerow">
+                                            <td class="project">     Project_Баг-репорты_Тестирование модального окна формы оплаты
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="PRJ-12" href="https://oksanka27.atlassian.net/browse/PRJ-12">PRJ-12</a>
+</td>
+                                            <td class="summary"><p>
+                Иконка MASTERCARD не отображается при вводе первой цифры 5 в поле ввода номера карты
+    </p>
+</td>
+                                            <td class="issuetype">    Баг
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;К выполнению&lt;/span&gt;">К выполнению</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Нет решения</em>
+</td>
+                                            <td class="assignee">    <em>Не назначено</em>
+</td>
+                                            <td class="reporter">            Оксана Будковая
+    </td>
+                                            <td class="creator">            Оксана Будковая
+    </td>
+                                            <td class="created"> 21/мар/23 4:22 PM </td>
+                                            <td class="lastViewed"> 22/мар/23 2:15 PM </td>
+                                            <td class="updated"> 22/мар/23 2:15 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://oksanka27.atlassian.net/secure/attachment/10071/%D0%B2%D0%B2%D0%BE%D0%B4+5+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg">
+            ввод 5 в поле карты.jpg
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment">      Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0<br/>
+<br/>
+Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)
+  </td>
+                                            <td class="description">      *Название:*<br/>
+<br/>
+Иконка MASTERCARD не отображается при вводе первой цифры 5 в поле ввода номера карты<br/>
+<br/>
+*Предусловие:*<br/>
+<br/>
+1.Открыть сайт [https://test-stand.gb.ru/seminar_stands/payform/index.html|https://test-stand.gb.ru/seminar_stands/payform/index.html]   <br/>
+<br/>
+*Шаги воспроизведения:*<br/>
+<br/>
+1.Поставить курсор в поле ввода номера карты<br/>
+<br/>
+2.Ввести цифру 5<br/>
+<br/>
+3.Проверить отображение иконки MASTERCARD при вводе первой цифры 5 <br/>
+<br/>
+*Фактический результат:*<br/>
+<br/>
+Иконка MASTERCARD не отображается при вводе первой цифры 5 в поле ввода номера карты<br/>
+<br/>
+!ввод 5 в поле карты.jpg|width=1920,height=1080!<br/>
+<br/>
+<br/>
+<br/>
+*Ожидаемый результат:*<br/>
+<br/>
+Иконка MASTERCARD отображается при вводе первой цифры 5 в поле ввода номера карты
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Критический</td>
+                                            <td class="statuscategorychangedate"> 21/мар/23 4:22 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">К выполнению</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i000f3:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10069" rel="10069" data-issuekey="PRJ-13" class="issuerow">
+                                            <td class="project">     Project_Баг-репорты_Тестирование модального окна формы оплаты
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="PRJ-13" href="https://oksanka27.atlassian.net/browse/PRJ-13">PRJ-13</a>
+</td>
+                                            <td class="summary"><p>
+                Иконка DINERS_CLUB не отображается при вводе первой цифры 69 в поле ввода номера карты
+    </p>
+</td>
+                                            <td class="issuetype">    Баг
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;К выполнению&lt;/span&gt;">К выполнению</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Нет решения</em>
+</td>
+                                            <td class="assignee">    <em>Не назначено</em>
+</td>
+                                            <td class="reporter">            Оксана Будковая
+    </td>
+                                            <td class="creator">            Оксана Будковая
+    </td>
+                                            <td class="created"> 21/мар/23 4:25 PM </td>
+                                            <td class="lastViewed"> 22/мар/23 2:15 PM </td>
+                                            <td class="updated"> 22/мар/23 2:15 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://oksanka27.atlassian.net/secure/attachment/10072/%D0%B2%D0%B2%D0%BE%D0%B4+69+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg">
+            ввод 69 в поле карты.jpg
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment">      Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0<br/>
+<br/>
+Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)
+  </td>
+                                            <td class="description">      *Название:*<br/>
+<br/>
+Иконка DINERS_CLUB не отображается при вводе первой цифры 69 в поле ввода номера карты<br/>
+<br/>
+*Предусловие:*<br/>
+<br/>
+1.Открыть сайт [https://test-stand.gb.ru/seminar_stands/payform/index.html|https://test-stand.gb.ru/seminar_stands/payform/index.html]   <br/>
+<br/>
+*Шаги воспроизведения:*<br/>
+<br/>
+1.Поставить курсор в поле ввода номера карты<br/>
+<br/>
+2.Ввести цифру 69<br/>
+<br/>
+3.Проверить отображение иконки DINERS_CLUB при вводе первой цифры 69 <br/>
+<br/>
+*Фактический результат:*<br/>
+<br/>
+Иконка DINERS_CLUB не отображается при вводе первой цифры 69 в поле ввода номера карты<br/>
+<br/>
+!ввод 69 в поле карты.jpg|width=1920,height=1080!<br/>
+<br/>
+*Ожидаемый результат:*<br/>
+<br/>
+Иконка DINERS_CLUB отображается при вводе первой цифры 69 в поле ввода номера карты
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Критический</td>
+                                            <td class="statuscategorychangedate"> 21/мар/23 4:25 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">К выполнению</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i000fb:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10070" rel="10070" data-issuekey="PRJ-14" class="issuerow">
+                                            <td class="project">     Project_Баг-репорты_Тестирование модального окна формы оплаты
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="PRJ-14" href="https://oksanka27.atlassian.net/browse/PRJ-14">PRJ-14</a>
+</td>
+                                            <td class="summary"><p>
+                Иконка JCB не отображается при вводе первой цифры 3 в поле ввода номера карты
+    </p>
+</td>
+                                            <td class="issuetype">    Баг
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;К выполнению&lt;/span&gt;">К выполнению</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Нет решения</em>
+</td>
+                                            <td class="assignee">    <em>Не назначено</em>
+</td>
+                                            <td class="reporter">            Оксана Будковая
+    </td>
+                                            <td class="creator">            Оксана Будковая
+    </td>
+                                            <td class="created"> 21/мар/23 4:30 PM </td>
+                                            <td class="lastViewed"> 22/мар/23 2:15 PM </td>
+                                            <td class="updated"> 22/мар/23 2:16 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://oksanka27.atlassian.net/secure/attachment/10073/%D0%B2%D0%B2%D0%BE%D0%B4+3+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg">
+            ввод 3 в поле карты.jpg
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment">      Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0<br/>
+<br/>
+Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)
+  </td>
+                                            <td class="description">      *Название:*<br/>
+<br/>
+Иконка JCB не отображается при вводе первой цифры 3 в поле ввода номера карты<br/>
+<br/>
+*Предусловие:*<br/>
+<br/>
+1.Открыть сайт [https://test-stand.gb.ru/seminar_stands/payform/index.html|https://test-stand.gb.ru/seminar_stands/payform/index.html]   <br/>
+<br/>
+*Шаги воспроизведения:*<br/>
+<br/>
+1.Поставить курсор в поле ввода номера карты<br/>
+<br/>
+2.Ввести цифру 3<br/>
+<br/>
+3.Проверить отображение иконки JCB при вводе первой цифры 3 <br/>
+<br/>
+*Фактический результат:*<br/>
+<br/>
+Иконка JCB не отображается при вводе первой цифры 3 в поле ввода номера карты<br/>
+<br/>
+!ввод 3 в поле карты.jpg|width=1920,height=1080!<br/>
+<br/>
+*Ожидаемый результат:*<br/>
+<br/>
+Иконка JCB отображается при вводе первой цифры 3 в поле ввода номера карты
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Критический</td>
+                                            <td class="statuscategorychangedate"> 21/мар/23 4:30 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">К выполнению</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i000fj:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10071" rel="10071" data-issuekey="PRJ-15" class="issuerow">
+                                            <td class="project">     Project_Баг-репорты_Тестирование модального окна формы оплаты
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="PRJ-15" href="https://oksanka27.atlassian.net/browse/PRJ-15">PRJ-15</a>
+</td>
+                                            <td class="summary"><p>
+                Иконка UNIONPAY не отображается при вводе первой цифры 62 в поле ввода номера карты
+    </p>
+</td>
+                                            <td class="issuetype">    Баг
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;К выполнению&lt;/span&gt;">К выполнению</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Нет решения</em>
+</td>
+                                            <td class="assignee">    <em>Не назначено</em>
+</td>
+                                            <td class="reporter">            Оксана Будковая
+    </td>
+                                            <td class="creator">            Оксана Будковая
+    </td>
+                                            <td class="created"> 21/мар/23 4:32 PM </td>
+                                            <td class="lastViewed"> 22/мар/23 2:16 PM </td>
+                                            <td class="updated"> 22/мар/23 2:16 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://oksanka27.atlassian.net/secure/attachment/10074/%D0%B2%D0%B2%D0%BE%D0%B4+62+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg">
+            ввод 62 в поле карты.jpg
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment">      Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0<br/>
+<br/>
+Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)
+  </td>
+                                            <td class="description">      *Название:*<br/>
+<br/>
+Иконка UNIONPAY не отображается при вводе первой цифры 62 в поле ввода номера карты<br/>
+<br/>
+*Предусловие:*<br/>
+<br/>
+1.Открыть сайт [https://test-stand.gb.ru/seminar_stands/payform/index.html|https://test-stand.gb.ru/seminar_stands/payform/index.html]   <br/>
+<br/>
+*Шаги воспроизведения:*<br/>
+<br/>
+1.Поставить курсор в поле ввода номера карты<br/>
+<br/>
+2.Ввести цифру 62<br/>
+<br/>
+3.Проверить отображение иконки UNIONPAY при вводе первой цифры 62 <br/>
+<br/>
+*Фактический результат:*<br/>
+<br/>
+Иконка UNIONPAY не отображается при вводе первой цифры 62 в поле ввода номера карты. Отображается иконка MASTERCARD <br/>
+<br/>
+!ввод 62 в поле карты.jpg|width=1920,height=1080!<br/>
+<br/>
+*Ожидаемый результат:*<br/>
+<br/>
+Иконка UNIONPAY отображается при вводе первой цифры 62 в поле ввода номера карты
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Критический</td>
+                                            <td class="statuscategorychangedate"> 21/мар/23 4:32 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">К выполнению</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i000fr:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10072" rel="10072" data-issuekey="PRJ-16" class="issuerow">
+                                            <td class="project">     Project_Баг-репорты_Тестирование модального окна формы оплаты
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="PRJ-16" href="https://oksanka27.atlassian.net/browse/PRJ-16">PRJ-16</a>
+</td>
+                                            <td class="summary"><p>
+                Иконка MAESTRO не отображается при вводе первой цифры 55 в поле ввода номера карты
+    </p>
+</td>
+                                            <td class="issuetype">    Баг
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;К выполнению&lt;/span&gt;">К выполнению</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Нет решения</em>
+</td>
+                                            <td class="assignee">    <em>Не назначено</em>
+</td>
+                                            <td class="reporter">            Оксана Будковая
+    </td>
+                                            <td class="creator">            Оксана Будковая
+    </td>
+                                            <td class="created"> 21/мар/23 4:36 PM </td>
+                                            <td class="lastViewed"> 22/мар/23 2:16 PM </td>
+                                            <td class="updated"> 22/мар/23 2:16 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://oksanka27.atlassian.net/secure/attachment/10075/%D0%B2%D0%B2%D0%BE%D0%B4+55+%D0%B2+%D0%BF%D0%BE%D0%BB%D0%B5+%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg">
+            ввод 55 в поле карты.jpg
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment">      Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0<br/>
+<br/>
+Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)
+  </td>
+                                            <td class="description">      *Название:*<br/>
+<br/>
+Иконка MAESTRO не отображается при вводе первой цифры 55 в поле ввода номера карты<br/>
+<br/>
+*Предусловие:*<br/>
+<br/>
+1.Открыть сайт [https://test-stand.gb.ru/seminar_stands/payform/index.html|https://test-stand.gb.ru/seminar_stands/payform/index.html]   <br/>
+<br/>
+*Шаги воспроизведения:*<br/>
+<br/>
+1.Поставить курсор в поле ввода номера карты<br/>
+<br/>
+2.Ввести цифру 55<br/>
+<br/>
+3.Проверить отображение иконки MAESTRO при вводе первой цифры 55 <br/>
+<br/>
+*Фактический результат:*<br/>
+<br/>
+Иконка MAESTRO не отображается при вводе первой цифры 55 в поле ввода номера карты. <br/>
+<br/>
+!ввод 55 в поле карты.jpg|width=1920,height=1080!<br/>
+<br/>
+*Ожидаемый результат:*<br/>
+<br/>
+Иконка MAESTRO отображается при вводе первой цифры 55 в поле ввода номера карты
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Критический</td>
+                                            <td class="statuscategorychangedate"> 21/мар/23 4:36 PM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">К выполнению</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i000fz:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+
+
+                <tr id="issuerow10077" rel="10077" data-issuekey="PRJ-21" class="issuerow">
+                                            <td class="project">     Project_Баг-репорты_Тестирование модального окна формы оплаты
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="PRJ-21" href="https://oksanka27.atlassian.net/browse/PRJ-21">PRJ-21</a>
+</td>
+                                            <td class="summary"><p>
+                Не отображается 0 в поле перед вводом цифры, если месяц до 10, в поле ввода &quot;Срок годности&quot;
+    </p>
+</td>
+                                            <td class="issuetype">    Баг
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;К выполнению&lt;/span&gt;">К выполнению</span>    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="resolution">    <em>Нет решения</em>
+</td>
+                                            <td class="assignee">    <em>Не назначено</em>
+</td>
+                                            <td class="reporter">            Оксана Будковая
+    </td>
+                                            <td class="creator">            Оксана Будковая
+    </td>
+                                            <td class="created"> 22/мар/23 12:36 AM </td>
+                                            <td class="lastViewed"> 22/мар/23 2:18 PM </td>
+                                            <td class="updated"> 22/мар/23 2:18 PM </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    &nbsp;
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail">            <a href="https://oksanka27.atlassian.net/secure/attachment/10080/%D0%BD%D0%B5%D1%82+%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B9+%D0%BD%D0%B0+%D0%B2%D0%B2%D0%BE%D0%B4.jpg">
+            нет ограничений на ввод.jpg
+        </a>
+    </td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks"></td>
+                                            <td class="issuelinks"></td>
+                                            <td class="environment">      Windows 10 Корпоративная LTSC, 21H2, 19044.2728, Windows Feature Experience Pack 120.2212.4190.0<br/>
+<br/>
+Google Chrome Версия 110.0.5481.178 (Официальная сборка), (32 бит)
+  </td>
+                                            <td class="description">      Не отображается 0 в поле перед цифрой, если месяц до 10, в поле ввода &quot;Срок годности&quot;<br/>
+<br/>
+*Предусловие:*<br/>
+<br/>
+1.Открыть сайт [https://test-stand.gb.ru/seminar_stands/payform/index.html|https://test-stand.gb.ru/seminar_stands/payform/index.html] <br/>
+<br/>
+*Шаги воспроизведения:*<br/>
+<br/>
+1.Поставить курсор мыши в поле ввода &quot;Срок годности&quot; (месяц)<br/>
+<br/>
+2.Проверить отображение 0 перед цифрой, если месяц до 10<br/>
+<br/>
+*Фактический результат:*<br/>
+<br/>
+Не отображается 0 в поле перед цифрой, если месяц до 10, в поле ввода &quot;Срок годности&quot;, в поле можно ввести цифры, буквы, символы, что не соответствует документации принскрин ниже<br/>
+<br/>
+!нет ограничений на ввод.jpg|width=1920,height=1080!<br/>
+<br/>
+*Ожидаемый результат:*<br/>
+<br/>
+Отображается 0 перед цифрой, если месяц до 10 в поле ввода &quot;Срок годности&quot; (месяц)
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress"></td>
+                                            <td class="aggregateprogress"></td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    Критический</td>
+                                            <td class="statuscategorychangedate"> 22/мар/23 12:36 AM </td>
+                                            <td class="statusCategory">
+    <span class="aui-lozenge aui-lozenge-subtle jira-issue-status-lozenge jira-issue-status-lozenge-blue-gray
+            jira-issue-status-lozenge-max-width-medium">К выполнению</span>
+</td>
+                                            <td class="parent"></td>
+                                            <td class="customfield_10009"></td>
+                                            <td class="customfield_10008"></td>
+                                            <td class="customfield_10003"></td>
+                                            <td class="customfield_10007"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="customfield_10005"></td>
+                                            <td class="customfield_10026"></td>
+                                            <td class="customfield_10013"></td>
+                                            <td class="customfield_10014"></td>
+                                            <td class="customfield_10011"></td>
+                                            <td class="customfield_10012"></td>
+                                            <td class="customfield_10021"></td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10017"></td>
+                                            <td class="customfield_10027"></td>
+                                            <td class="customfield_10028"></td>
+                                            <td class="customfield_10002"></td>
+                                            <td class="customfield_10018"></td>
+                                            <td class="customfield_10019">      0|i000h3:
+  </td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10020"></td>
+                                            <td class="customfield_10015"></td>
+                                            <td class="customfield_10033"></td>
+                                            <td class="customfield_10016"></td>
+                                            <td class="customfield_10029"></td>
+                                            <td class="customfield_10023"></td>
+                                            <td class="customfield_10022"></td>
+                                            <td class="customfield_10001"></td>
+                                            <td class="customfield_10030"></td>
+                                            <td class="customfield_10024"></td>
+                                            <td class="customfield_10000"></td>
+                    </tr>
+        </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="70"><font size="1">
+        Полученный Wed Mar 22 11:24:18 UTC 2023 Оксана Будковая используя JIRA 1001.0.0-SNAPSHOT#100219-sha1:eb3f1fe6fc9588c9970f69b661232bd8cff92e79.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>
